@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=900px">
+    <title>PLOL - Personalizada LOL</title>
+    <link rel="icon" href="images/logos/PLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+</head>
+<body>
+    <section id="header-home">
+        <div id="header">
+            <div class="header-background">
+                <video src="images/background.webm" autoplay loop muted>
+            </div>
+
+            <div class="header-logo">
+                <img class="header-border" src="images/misc/border.png">
+                <img class="header-logo-image" src="images/logos/title.png" data-aos="fade-down" data-aos-duration="1500">
+                <video src="images/background.webm" class="header-image-background" autoplay loop muted>
+            </div>
+
+        </div>
+        
+
+        <div class="home" id="home">
+
+            <!-- <img src="images/champions/yassuo.png" id="home-image"> -->
+            <!-- <img src="images/logos/PLogo.png" id="home-image2"> -->
+            <!-- <img src="images/champions/akali.png" id="home-image" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500"> -->
+            <!-- <img src="images/champions/yassuo.png" id="home-image-2" data-aos="fade-left" data-aos-duration="1500"> -->
+            <div class="home-container">
+                <div class="form animate__animated animate__fadeInUp" id="form">
+                    <form onsubmit="return enviarNomes()">
+                        
+                        <h1 class="form-title" data-aos="fade-down" data-aos-duration="1000">Digite o nome dos Invocadores</h1>
+                        <br>
+                        <div class="names">
+                            <div class="names1">
+                            <!-- 1 --> <input type="text" id="name1" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">
+                            <!-- 2 --> <input type="text" id="name2" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+                            <!-- 3 --> <input type="text" id="name3" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+                            <!-- 4 --> <input type="text" id="name4" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+                            <!-- 5 --> <input type="text" id="name5" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">
+                            </div>
+
+                            <div class="names2">
+                            <!-- 6 --> <input type="text" id="name6" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">
+                            <!-- 7 --> <input type="text" id="name7" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+                            <!-- 8 --> <input type="text" id="name8" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+                            <!-- 9 --> <input type="text" id="name9" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+                            <!-- 10 --> <input type="text" id="name10" placeholder="Nome do Invocador" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">       
+                            </div>
+                            
+                        </div>
+                        <input id="submitTeams" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" type="submit" value="Enviar" class="formButton" onclick="showTeams()">
+                    </form>
+                </div>
+
+                <div class="modal animate__animated animate__fadeIn" id="modal">
+                    <div class="times-preview animate__animated animate__fadeIn" id="teams" >
+                        <div id="time1" class="time-card animate__animated animate__fadeInLeft animate__delay-1s" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000" >
+                            <div class="team-title"><h1>Time 1</h1></div>
+                            <span id="team1"></span>
+                        </div>
+                        <div class="direct-button animate__animated animate__tada animate__delay-1s">
+                            <img src="images/misc/vs.png" class="vs"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                            <svg viewBox="0 0 100 100" class="svg1"><path class="cls-1" d="M50 .5A49.49 49.49 0 00.67 46l4 4-4 4a49.49 49.49 0 0098.66 0l-4-4 4-4A49.49 49.49 0 0050 .5z"></path></svg>
+                        </div>
+                        <div id="time2" class="time-card animate__animated animate__fadeInRight animate__delay-1s" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1500">
+                            <div class="team-title"><h1>Time 2</h1></div>
+                            <span id="team2"></span>
+                        </div>
+                    </div>
+
+                    <div class="modal-botoes animate__animated animate__fadeInUp"> 
+                        <span class="closeModal animate__animated animate__fadeInUp animate__delay-1s" onclick="editModal()">Editar</span>
+                        <form onsubmit="return enviarNomes()">
+                            <input class="roletarButton animate__animated animate__fadeInUp animate__delay-1s" type="submit" value="R O L E T A R" class="formButton" onclick="showTeams()"></form>
+                        <span class="clearModal animate__animated animate__fadeInUp animate__delay-1s" onclick="clearModal()">Limpar</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <div class="logo-footer">
+                <img src="images/logos/PLogo.png" >
+            </div>
+
+            <div class="info-footer">
+                <h3>PLOL- 2020 © Todos os direitos reservados.</h3>
+                <span>Este site não é afiliado à Riot Games, Inc.® e nem ao League Of Legends™</span>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <a href="https://www.riotgames.com/" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2019/12/riot-games-logo-2.png" alt=""></a>
+            <a href="https://br.leagueoflegends.com/pt-br/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/1200px-League_of_Legends_2019_vector.svg.png" alt=""></a>
+        </div>
+
+
+    </footer>
+    <div class="footer-below"><span>Desenvolvido por <a href="https://github.com/pedroflp" target="_blank">@pedroflp</a></span></div>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
+<script>
+    function showTeams(){
+        var modal = document.getElementById('modal');
+        modal.style.display = 'block';
+
+        var form = document.getElementById('form');
+        form.style.display = 'none';
+
+        var image = document.getElementById('home-image');
+        image.style.opacity = '0';
+    }
+    function editModal(){
+        var modal = document.getElementById('modal');
+        modal.style.display = 'none';
+
+        document.getElementById('submitTeams').value = 'Reenviar';
+
+        var form = document.getElementById('form');
+        form.style.display = 'block';
+
+        var image = document.getElementById('home-image');
+        image.style.opacity = '1';
+    }
+
+</script>
+</body>
+</html>

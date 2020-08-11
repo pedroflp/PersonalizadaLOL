@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('//db.onlinewebfonts.com/c/2c37f3699d9728b566e9bdc5b11e5180?family=BeaufortW01-Regular');
+
+@font-face{
+    font-family: 'Lol';
+    src: url('fonts/friz-quadrata-com-regular.ttf');
+}
+
+@font-face{
+    font-family: 'Lol2';
+    src: url('fonts/Beaufort.ttf');
+}
+
+@font-face{
+    font-family: 'Lol3';
+    src: url('fonts/BeaufortHeavy.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: url('cursor/arrow.cur'), auto;
+    -webkit-user-drag: none;
+    outline: none;
+}
+#header{
+    margin: auto;
+    overflow: hidden;
+    height: 730px;
+    padding-bottom: 50px;
+}
+.header-background{
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.header-background video{
+    filter: blur(20px) saturate(0.6) brightness(0.5);
+    width: 110%;
+    margin: -50px -50px;
+}
+.header-logo{
+    margin: -500px 0px 0px 0px;
+}
+.header-border{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    width: 1220px;
+    height: 650px;
+    margin: 10px auto;
+    left: 0;
+    right: 0;
+}
+.header-logo .header-logo-image{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: -440px auto;
+    text-shadow: rgba(0,0,0,0.9);
+    z-index: 15;
+}
+.header-image-background{
+    width: 100%;
+    height: 620px;
+    margin: 0px auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#backgroundVideo{
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+#header span{
+    font-family: 'Lol';
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+    margin-top: -10%;
+}
+.direct-button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: auto;
+    margin-right: -10px;
+}
+.direct-button img{
+    position: relative;
+    z-index: 20;
+    margin-top: 25px;
+    margin-right: -25px;
+}
+
+.direct-button .svg1{
+    width: 200px;
+    stroke: rgb(255, 174, 0);
+    stroke-width: 0.3;
+    fill: transparent;
+    font-size: 20px;
+    animation: rotate 20s linear infinite;
+    margin-top: 0px;
+    margin-left: -150px;
+}
+
+.direct-button .svg2{
+    width: 200px;
+    stroke: transparent;
+    fill: rgb(0, 0, 0);
+    font-size: 20px;
+    animation: rotate 15s linear infinite;
+    margin-top: 0px;
+    margin-left: -150px;
+}
+
+.montartimesButton{
+    padding: 20px 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    border: 2px solid rgb(255, 177, 9);
+    background: none;
+    border-radius: 5px;
+    color: rgb(255, 177, 9);
+    font-family: 'Lol';
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.montartimesButton:hover{
+    background: white;
+    transform: scale(1.05);
+}
+
+#header i{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    animation: position 2s infinite;
+}
+
+.home-container{
+    overflow: hidden;
+}
+#home-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 600px -350px 0px;
+    transform: rotate(20deg);
+    width: 900px;
+    animation: fly 4s infinite;
+}
+#home-image-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 600px -600px;
+    transform: rotate(0deg);
+    width: 1000px;
+    animation: fly2 4s infinite;
+}
+
+#home-image2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 47% 46.4%;
+    width: 5%;
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+.form{
+    width: 70%;
+    margin: auto;
+    margin: 50px auto 100px;
+}
+.form-title{
+    font-family: 'Lol', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0px;
+    width: 75%;
+    margin: auto;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    font-family: 'Lol', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+    border: 2px solid transparent;
+    background: rgb(236, 236, 236) ;
+    transition: 0.5s !important;
+    clip-path: polygon(0 0, 94% 0, 100% 33%, 100% 80%, 100% 100%, 6% 100%, 0 74%, 0% 20%);
+}
+.form input[type = text]:hover{
+    background: rgb(223, 223, 223);
+}
+.form input[type = text]:focus{
+    background: rgb(223, 223, 223);
+    border: 2px solid black;
+    outline: none;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 100% 80%, 100% 100%, 0 100%, 0 74%, 0% 20%)!important;
+}
+.form input[type = text]:focus::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: 'Lol', sans-serif;
+}
+.form input[type = text]::placeholder{
+    text-transform: none;
+    color: rgb(177, 177, 177);
+    font-weight: 100;
+    transition: 0.4s;
+    font-family: 'Lol', sans-serif;
+}
+.formButton{
+    font-family: 'Lol';
+    font-weight: 600!important;
+    font-size: 20px!important;
+    text-transform: uppercase!important;
+    letter-spacing: 5px!important;
+    padding: 10px 10px!important;
+    width: 200px!important;
+    margin: 30px auto!important;
+    align-items: center!important;
+    background: rgba(255, 210, 9, 0.5)!important;
+    border: 1px solid rgb(255, 177, 9)!important;
+    box-shadow: 0px 0px 20px rgb(255, 210, 9)!important;
+    cursor: url('cursor/arrow_link.cur'), auto;
+    transition: 0.4s;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 100% 80%, 100% 100%, 0 100%, 0 74%, 0% 20%)!important;
+}
+.formButton:hover{
+    background: rgba(255, 210, 9, 0.8)!important;
+    box-shadow: 0px 0px 40px rgb(255, 210, 9)!important;
+}
+
+.vs{
+    width: 150px!important;
+    height: 150px;
+    margin: auto
+}
+.team-title{
+    font-family: 'Lol3';
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: rgb(17, 17, 17);
+    background: rgb(255, 220, 146);
+    transform: skew(-20deg);
+    border: 7px solid white;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.team-title h1{
+    transform: skew(20deg);
+}
+.times-preview span{
+    font-family: 'Lol';
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.time-card{
+    border-radius: 5px;
+    width: 50%;
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0px 100px;
+    overflow: hidden;
+  }
+
+  /* Modal Content/Box */
+  .times-preview {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto; /* 15% from the top and centered */
+    padding: 50px 100px;
+    background: url(images/misc/border2.png) no-repeat;
+    background-size: 1200px;
+    background-position: center;
+    width: 1300px; /* Could be more or less, depending on screen size */
+  }
+  .modal-botoes{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      padding: 0px;
+      background: white;
+      margin: -105px auto 50px;
+      width: 600px;
+  }
+  
+  .modal-botoes i{
+    display: none;
+}
+  .roletarButton{
+      padding: 30px 50px;
+      text-align: center;
+      font-family: 'Lol3';
+      font-weight: 700;
+      font-size: 20px;
+      border: 1px solid rgb(165, 165, 165);
+      margin: 0px 20px;
+      background: rgb(224, 224, 224);
+      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.8);
+      color: rgb(3, 3, 3);
+      cursor: url('cursor/arrow_link.cur'), auto;
+      outline: none;
+      transition: 0.4s;
+  }
+  .roletarButton:hover{
+    background: rgb(231, 231, 231);
+    box-shadow: 0px 0px 25px rgba(168, 168, 168, 1);
+  }
+  .closeModal:hover > .fa-pen{
+      display: block;
+      opacity: 1;
+  }
+  .closeModal{
+      padding: 10px 50px;
+      background: rgb(252, 230, 133);
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(255, 174, 0);
+      box-shadow: 0px 0px 20px rgba(255, 210, 9, 0.8);
+      font-family: 'Lol';
+      font-weight: 700;
+      height: 100%;
+      text-align: center;
+      transition: 0.5s;
+      cursor: url('cursor/arrow_link.cur'), auto;
+  }
+  .closeModal:hover{
+      background: rgb(255, 221, 69);
+      box-shadow: 0px 0px 40px rgba(255, 210, 9, 1);
+  }
+
+  .clearModal{
+    padding: 10px 50px;
+      background: rgb(250, 116, 116);
+      border: 1px solid rgb(129, 0, 0);
+      box-shadow: 0px 0px 20px rgba(255, 46, 9, 0.8);
+      font-family: 'Lol';
+      font-weight: 700;
+      transition: 0.5s;
+      cursor: url('cursor/arrow_link.cur'), auto;
+  }
+  .clearModal:hover{
+    background: rgb(255, 55, 55);  
+    box-shadow: 0px 0px 25px rgba(255, 46, 9, 1);
+  }
+  
+footer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    background: rgb(14, 14, 14);
+    padding: 100px;
+    cursor: default;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Didact Gothic';
+    cursor: default;
+}
+.footer-left h3{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+.footer-left span{
+    color: rgb(63, 63, 63);
+    cursor: default;
+}
+.logo-footer img{
+    width: 100px;
+    filter: saturate(0) brightness(10);
+    cursor: default;
+}
+.info-footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+    cursor: default;
+}
+.footer-right{
+    cursor: default;
+}
+.footer-right a, .footer-right img{
+    width: 100px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.footer-below{
+    background: rgb(20, 20, 20);
+    text-align: center;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    font-family: 'Lol2';
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: default;
+}
+.footer-below a{
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes position{
+    0%{
+        margin: 5% auto;
+    }
+    50%{
+        margin: 6% auto;
+    }
+    100%{
+        margin: 5% auto;
+    }
+}
+@keyframes scale{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .discord-container{
+        transform: translateY(130%);
+        
+    }
+}
+@media screen and (max-width: 1400px){
+    .discord-container{
+        transform: translateY(115%);
+    }
+    .discord-window{
+        height: 50%;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1200px){
+
+    .discord-window{
+        display: none;
+    }
+}
+
+@keyframes fly{
+    0%{
+        transform: translateY(-10px) rotate(20deg);
+    }
+   50%{
+        transform: translateY(10px) rotate(19deg);
+    }
+    100%{
+        transform: translateY(-10px) rotate(20deg);
+    }
+}
+
+@keyframes fly2{
+    0%{
+        transform: translateY(-10px) rotate(0deg);
+    }
+   50%{
+        transform: translateY(10px) rotate(-1deg);
+    }
+    100%{
+        transform: translateY(-10px) rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1800px){
+    .header-border{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+        width: 1220px;
+        height: 650px;
+        margin: 10px auto;
+        left: 0;
+        right: 0;
+    }
+    #home-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 600px -300px 0px;
+        transform: rotate(20deg);
+        width: 800px;
+        animation: fly 4s infinite;
+    }
+    .home-container{
+        margin: 100px 0px;
+    }
+
+    .form{
+        transform: scale(0.8);
+    }
+
+    .header-image-background{
+        width: 1920px;
+        height: 620px;
+        margin-left: -95px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .form{
+        width: 100%;
+        margin: 0px auto;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 1600px){
+    #header{
+        margin: auto;
+        overflow: hidden;
+        height: 700px;
+        padding-bottom: 50px;
+    }
+    .header-border{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+        width: 1080px;
+        height: 580px;
+        margin: 0px auto;
+        left: 0;
+        right: 0;
+    }
+    #home-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 600px -300px 0px;
+        transform: rotate(20deg);
+        width: 800px;
+        animation: fly 4s infinite;
+    }
+
+    
+    .header-logo .header-logo-image{
+        display: flex;
+        justify-content: center;
+        width: 900px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: -400px auto;
+        text-shadow: rgba(0,0,0,0.9);
+        z-index: 15;
+    }
+
+    .modal{
+        transform: scale(1);
+    }
+
+    .header-image-background{
+        width: 100%;
+        height: 550px;
+        margin: 23px 0px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    #header{
+        margin: auto;
+        overflow: hidden;
+        height: 430px;
+        padding-bottom: 50px;
+    }
+
+    .header-background{
+        height: 400px;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .header-border{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+        width: 780px;
+        height: 430px;
+        margin: 150px auto;
+        left: 0;
+        right: 0;
+    }
+
+    .header-logo .header-logo-image{
+        display: flex;
+        justify-content: center;
+        width: 700px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: -450px auto;
+        text-shadow: rgba(0,0,0,0.9);
+        z-index: 15;
+    }
+
+    .header-image-background{
+        width: 100%;
+        height: 400px;
+        margin: 170px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #home-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 500px -280px 0px;
+        transform: rotate(20deg);
+        width: 700px;
+        animation: fly 4s infinite;
+    }
+
+    .home{
+        width: 100%;
+        margin: 0px auto;
+        transform: scale(1);
+    }
+
+    .times-preview {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto; /* 15% from the top and centered */
+        padding: 50px 100px;
+        background: url(images/misc/border2.png) no-repeat;
+        background-size: 1200px;
+        background-position: center;
+        width: 1000px; /* Could be more or less, depending on screen size */
+      }
+}
