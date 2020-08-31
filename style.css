@@ -35,11 +35,11 @@
     width: 100%;
     margin: auto;
     overflow: hidden;
+    background: black;
 }
 .header-background video{
     filter: blur(20px) saturate(0.6) brightness(0.5);
-    width: 110%;
-    margin: -50px -50px;
+    width: 100%;
 }
 .header-logo{
     margin: -500px 0px 0px 0px;
